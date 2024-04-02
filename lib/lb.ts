@@ -21,7 +21,7 @@ export class ALB extends Construct {
 
     // attach the lb to the fargate service
     const listener = lb.addListener("Listener", {
-      port: 3000,
+      port: 80,
       protocol: alb.ApplicationProtocol.HTTP,
     });
 
